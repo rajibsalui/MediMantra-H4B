@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "node clean-cache.js",
+    "dev:clean": "npm run clean && npm run dev",
+    "build:clean": "npm run clean && npm run build"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.14.2",
